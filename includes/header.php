@@ -57,7 +57,7 @@
           </li>
 
           <li class="nav-item ms-lg-auto my-auto ms-3 ms-lg-0">
-            <a href="https://www.youtube.com/watch?v=YHyU8OhfPbA" class="btn btn-sm  bg-gradient-warning  btn-round mb-0 me-1 mt-2 mt-md-0" target="_blank">Tom V</a></li>
+            <a href="https://youtube.com/channel/UCN-5uexeEGJJ3mITYmbiOCA" class="btn btn-sm  bg-gradient-warning  btn-round mb-0 me-1 mt-2 mt-md-0" target="_blank">YouTube</a></li>
         </ul>
       </div>
     </div>
