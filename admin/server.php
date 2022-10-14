@@ -179,8 +179,9 @@ if(isset($_POST['creategallery']))
 {
   $id = $_POST['gallery_id'];
   $image = $_POST['gallery_image'];
+  $name = $_POST['gallery_name'];
 
-  $query = "INSERT INTO gallery (date,title,content) VALUES ('$image')";
+  $query = "INSERT INTO gallery (image,name) VALUES ('$image','$name')";
   $query_run = mysqli_query($connection, $query);
 
   if($query_run)

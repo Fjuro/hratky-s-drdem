@@ -30,10 +30,20 @@ include('includes/navbar.php');
       <form action="server.php" method="POST">
         <div class="modal-body">
             <div class="form-group">
+                <p><b>Jak přidat obrázek</b><br>
+                1. Jdi na <a href="https://ibb.co">IBB</a> a klikni na Nahrát<br>
+                2. Vyber obrázky které chceš nahrát a nahraj je<br>
+                3. Počkej až se nahrají a na každý z nich klikni, každý se otevře v nové kartě<br>
+                4. Klikni na obrázek pravým a dej Kopírovat adresu obrázku<br>
+                5. Vlož zkopírovanou adresu do pole Adresa níže
+            <div class="form-group">
+                <label>Název (popis)</label>
+                <input type="text" name="gallery_name" class="form-control">
+            </div>
+            <div class="form-group">
                 <label>Adresa obrázku</label>
                 <input type="url" name="gallery_image" class="form-control">
             </div>
-        </div>
         <div class="modal-footer">
             <a href="gallery.php"><button type="button" class="btn btn-warning" data-dismiss="modal">Zrušit</button></a>
             <button type="submit" name="creategallery" class="btn btn-success">Potvrdit</button>

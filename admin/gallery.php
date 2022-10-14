@@ -8,15 +8,15 @@ include('includes/navbar.php');
 <div class="container-fluid">
 
   <!-- Page Heading -->
-  <h1 class="h3 mb-2 text-gray-800">Články</h1>
+  <h1 class="h3 mb-2 text-gray-800">Galerie</h1>
   <div class="mb-4"></div>
 
   <!-- DataTables Example -->
   <div class="card shadow mb-4">
       <div class="card-header py-3">
           <h6 class="m-0 font-weight-bold text-primary">
-            <a href="articlecreate.php" type="button" class="btn btn-primary">
-              Přidat článek
+            <a href="gallerycreate.php" type="button" class="btn btn-primary">
+              Přidat obrázek
             </a>
           </h6>
       </div>
@@ -45,6 +45,7 @@ include('includes/navbar.php');
                   <thead>
                       <tr>
                           <th>ID</th>
+                          <th>Název</th>
                           <th>Adresa obrázku</th>
                           <th>Upravit</th>
                           <th>Odstranit</th>
@@ -59,6 +60,7 @@ include('includes/navbar.php');
                     ?>
                       <tr>
                           <td><?php echo $row['id']; ?></td>
+                          <td><?php echo $row['name']; ?></td>
                           <td><?php echo $row['image']; ?></td>
                           <td style="text-align: center">
                             <form action="galleryedit.php" method="post">
